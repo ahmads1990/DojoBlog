@@ -1,4 +1,5 @@
 import BlogDetails from "./components/BlogDetails";
+import CreateAuthor from "./components/CreateAuthor";
 import CreateBlog from "./components/CreateBlog";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -15,11 +16,14 @@ function App() {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route path="/create">
+                        <Route exact path="/create">
                             <CreateBlog />
                         </Route>
                         <Route path="/blogs/:id">
                             <BlogDetails />
+                        </Route>
+                        <Route path="/create/author">
+                            <CreateAuthor />
                         </Route>
                         <Route path="*">
                             <NotFound />
