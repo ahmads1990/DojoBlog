@@ -1,5 +1,5 @@
 import BlogDetails from "./components/BlogDetails";
-import Create from "./components/Create";
+import CreateBlog from "./components/CreateBlog";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import NotFound from "./NotFound";
@@ -16,7 +16,7 @@ function App() {
                             <Home />
                         </Route>
                         <Route path="/create">
-                            <Create />
+                            <CreateBlog />
                         </Route>
                         <Route path="/blogs/:id">
                             <BlogDetails />

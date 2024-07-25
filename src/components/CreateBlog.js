@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import useFetch from "../hooks/useFetch";
 
-const Create = () => {
+const CreateBlog = () => {
     const apiUrl = process.env.REACT_APP_API_URL;
 
     const [title, setTitle] = useState("");
@@ -68,4 +68,4 @@ const Create = () => {
     );
 };
 
-export default Create;
+export default CreateBlog;
