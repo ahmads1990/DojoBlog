@@ -1,5 +1,5 @@
 import BlogList from "./BlogList";
-import useFetch from "./useFetch";
+import useFetch from "../hooks/useFetch";
 
 const Home = () => {
     const apiUrl = process.env.REACT_APP_API_URL;

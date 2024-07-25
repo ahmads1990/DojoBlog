@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import useFetch from "./useFetch";
+import useFetch from "../hooks/useFetch";
 
 const Create = () => {
     const apiUrl = process.env.REACT_APP_API_URL;
