@@ -3,19 +3,27 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import useFetch from "./useFetch";
 
 const Create = () => {
+    const apiUrl = process.env.REACT_APP_API_URL;
+
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [author, setAuthor] = useState(0);
     const [isPending, setIsPending] = useState(false);
+    const [error, setError] = useState("");
     const history = useHistory();
-    const apiUrl = process.env.REACT_APP_API_URL;
     const { data: authors, isPending: authorsPending, error: authorsError } = useFetch(apiUrl + "author");
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const blog = { title, description: body, AuthorId: author };
 
+        if (title === "" || author === "" || author === 0 || author === "") {
+            setError("All fields are required.");
+            return;
+        }
+
         setIsPending(true);
+        setError(""); // Clear error message
 
         fetch(apiUrl + "blog", {
             method: "POST",
@@ -32,6 +40,7 @@ const Create = () => {
     return (
         <div className="create">
             <h2>Add a New blog</h2>
+            {error && <div className="error">{error}</div>}
             <form onSubmit={handleSubmit}>
                 <label>Blog title:</label>
                 <input type="text" required value={title} onChange={(e) => setTitle(e.target.value)} />
@@ -43,6 +52,7 @@ const Create = () => {
                 {authorsPending && <div>Loading authors...</div>}
                 {authorsError && <div>{authorsError}</div>}
                 <select value={author} onChange={(e) => setAuthor(e.target.value)} disabled={authorsPending}>
+                    <option value="">Select an author</option>
                     {authors &&
                         authors.map((author) => (
                             <option key={author.id} value={author.id}>
