@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+# DojoBlog React app 📝
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Full-stack react app where users can create blogs with authors using react router
 
-## Available Scripts
+## Quick start
 
-In the project directory, you can run:
+You can visit published website on vercel [here](https://dojoblog.ahmadkhaled.me/)
+You can find the asp.net backend api code on github repo [here](https://github.com/ahmads1990/DojoBlogApi)
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   [Introduction](#introduction)
+-   [Motivation](#motivation)
+-   [Technologies](#technologies)
+-   [Features](#features)
+    -   [Future features](#future-features)
+-   [Getting Started](#getting-started)
+    -   [Prerequisites](#prerequisites)
+    -   [Installation](#installation)
+-   [Project walkthrough](#project-walkthrough)
+-   [Contributing](#contributing)
+    -   [Suggesting ideas](#suggesting-ideas)
+    -   [How to Contribute](#how-to-contribute)
+    -   [Reporting Bugs](#reporting-bugs)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Introduction
 
-### `npm test`
+Full-stack react app where users can create blogs with authors using react router
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
 
-### `npm run build`
+<a href="https://skillicons.dev">
+<img src="https://skillicons.dev/icons?i=html,css,javascript,react,git" />
+</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Additional used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   React Router
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started [🔼](#table-of-contents)
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    -   Git For cloning the repository.
+    -   Npm Package manager.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Steps to install and run this project locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-   Step 1 clone project in terminal paste:
+    ```bash
+    git clone https://github.com/ahmads1990/DojoBlog.git
+    ```
+-   Step 2 install packages
 
-## Learn More
+    ```bash
+        cd .\DojoBlog\
+        npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   Step 3 run app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+        npm start
+    ```
 
-### Code Splitting
+## Contributing [🔼](#table-of-contents)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Thank you for considering contributing to our project! Whether it's reporting issues, submitting bug fixes, or proposing new features, your contributions are welcome and appreciated.
 
-### Analyzing the Bundle Size
+### Suggesting ideas [🔼](#table-of-contents)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+We welcome suggestions for new features or improvements. Please open an issue to discuss your ideas before starting to work on them or send me a email.
 
-### Making a Progressive Web App
+### How to Contribute [🔼](#table-of-contents)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Fork the repository to your GitHub account.
+2. Checkout installation section
+3. Create a new branch for your contribution:
 
-### Advanced Configuration
+    ```bash
+    git checkout -b feature-branch
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. Make your changes and commit them with a descriptive commit message:
 
-### Deployment
+    ```bash
+    git commit -m "Add your descriptive message here"
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5. Push the changes to your forked repository:
 
-### `npm run build` fails to minify
+    ```bash
+    git push origin feature-branch
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+6. Open a pull request on the original repository. Provide a clear title and description for your pull request, explaining the changes you made.
+
+### Reporting Bugs [🔼](#table-of-contents)
+
+If you find a bug, please open an issue and provide detailed information, including:
+
+-   Steps to reproduce the bug
+-   Expected behavior
+-   Actual behavior
+-   Screenshot (optional)
+-   Environment details (e.g., operating system, browser, etc.)
+
+Thank you for contributing!
